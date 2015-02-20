@@ -12,17 +12,17 @@ using System.Threading;
 using System.Media;
 using System.IO;
 
-namespace AudioBatteryNotify
-{
-  class Program
-  {
+namespace AudioBatteryNotify {
+  class Program {
     public static void Main(string[] args) {
       int lastState=-1;
       var synth = new SpeechSynthesizer();
       while (true) {
-        if (SystemInformation.PowerStatus.BatteryChargeStatus == BatteryChargeStatus.High||
-           SystemInformation.PowerStatus.BatteryChargeStatus == BatteryChargeStatus.Low||
-           SystemInformation.PowerStatus.BatteryChargeStatus == BatteryChargeStatus.Critical) {
+        if (SystemInformation.PowerStatus.BatteryChargeStatus ==
+          BatteryChargeStatus.High||
+ SystemInformation.PowerStatus.BatteryChargeStatus == BatteryChargeStatus.Low||
+           SystemInformation.PowerStatus.BatteryChargeStatus ==
+             BatteryChargeStatus.Critical) {
           float pct = SystemInformation.PowerStatus.BatteryLifePercent;
           int newState=(int)Math.Round(pct);
           if (pct <= 1.0) {
