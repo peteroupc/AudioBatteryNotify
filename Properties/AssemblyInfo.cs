@@ -16,8 +16,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("AudioBatteryNotify")]
 [assembly:
 
-  AssemblyCopyright("Written by Peter O.  In the public domain. Public domain dedication: http://creativecommons.org/publicdomain/zero/1.0/"
-)]
+  AssemblyCopyright(
+  "Written by Peter O.  In the public domain. Public domain dedication: http://creativecommons.org/publicdomain/zero/1.0/")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 // This sets the default COM visibility of types in the assembly to invisible.
