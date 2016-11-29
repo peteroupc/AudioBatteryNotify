@@ -4,10 +4,12 @@
 *.class
 *.jar
 *.log
+*.map
 *.shf*
 *.suo
 *.userprefs
 .classpath
+.nuget/
 .pmd
 .project
 .settings/
@@ -23,3 +25,4 @@ bin/
 js/*.ht*
 js/DecTest.*
 obj/
+packages/
